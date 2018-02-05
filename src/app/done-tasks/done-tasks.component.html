@@ -1,0 +1,6 @@
+<h4>Tasks Acomplished: {{tasksDone.length}} </h4>
+      <ul>
+        <li appChecked appDate [date]="task.end" *ngFor="let task of tasksDone">
+          {{task.name | transformTask: '- Well done!!!'}}
+        </li>
+      </ul>
